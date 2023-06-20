@@ -1,0 +1,31 @@
+.card{
+    display: flex;
+    flex-direction:column;
+    width:300px;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 3px 6px 0 rgba(0,0,0,0.2);
+    font-family:'segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+&:hover{
+    box-shadow:0 3px 8px 0 rgba(26, 47, 143, 0.2);
+}
+}
+
+img{
+    width:100%;
+}
+
+h2{
+    margin: 1rem 2rem;
+}
+
+span{
+    margin:0 2rem;
+}
+
+button{
+    margin:2rem;
+    padding:1rem;
+    cursor:pointer;
+}
