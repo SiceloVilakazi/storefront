@@ -1,11 +1,12 @@
 .card{
-    display: flex;
-    flex-direction:column;
+    display: grid;
+    grid-template-columns: auto;
     width:300px;
     border-radius:16px;
     overflow:hidden;
     box-shadow:0 3px 6px 0 rgba(0,0,0,0.2);
     font-family:'segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
 &:hover{
     box-shadow:0 3px 8px 0 rgba(26, 47, 143, 0.2);
@@ -13,11 +14,17 @@
 }
 
 img{
-    width:100%;
+    width:100px;
+    height:100px;
+    object-fit: cover;
+    float:left;
+    margin-left: auto;
+    margin-right:auto;
 }
 
-h2{
+h3{
     margin: 1rem 2rem;
+    position: relative;
 }
 
 span{
@@ -29,3 +36,4 @@ button{
     padding:1rem;
     cursor:pointer;
 }
+

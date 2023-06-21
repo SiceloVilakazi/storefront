@@ -6,8 +6,6 @@
 	margin-top: 0.5%;
 	justify-content: center;
 	padding: 20px;
-	margin-left: 1%;
-	margin-right: 3%;
 	border-radius: 0.5rem;
 	flex-shrink: 1;
 }
@@ -17,3 +15,10 @@
     flex-direction:row;
     width:100%
  }
+
+ .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+	
+}
