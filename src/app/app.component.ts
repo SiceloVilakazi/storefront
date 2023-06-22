@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CategoriesService } from './Services/categories.service';
 import { ProductsService } from './Services/products.service';
+import { CartService } from './Services/cart.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,9 @@ export class AppComponent {
   categories!: any[];
   products!: any[];
 
-  constructor(private categoryService: CategoriesService,private productService:ProductsService){}
+  constructor(private categoryService: CategoriesService,
+    private productService:ProductsService,
+    private cartService:CartService ){}
 
   ngOnInit(){
     this.categoryService.getCategories().subscribe((data:any[])=>{
@@ -22,5 +25,9 @@ export class AppComponent {
     this.productService.getAllProducts().subscribe((data:any[])=>{
       this.products=data;
     });
+  }
+
+  addToCart(product:any){
+    this.cartService.addToCart(product).subscribe();
   }
 }
