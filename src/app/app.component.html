@@ -1,15 +1,4 @@
-<h1 class="header">Wolf Store Front!!</h1>
-
-<ng-container>
-  <div class="grid-container">
-    <app-card *ngFor="let product of products"
-    [image]="product.image"
-    [price]="product.price"
-    [description]="product.description"
-    [title]="product.title"
-    />
-  </div>
-
-</ng-container>
+<app-navigation-bar></app-navigation-bar>
 
 <router-outlet></router-outlet>
+<app-footer></app-footer>

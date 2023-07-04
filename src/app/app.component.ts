@@ -22,5 +22,6 @@ export class AppComponent {
     this.productService.getAllProducts().subscribe((data:any[])=>{
       this.products=data;
     });
+
   }
 }
