@@ -6,16 +6,14 @@ import { environment } from 'src/environments/environment.development';
 @Injectable({
   providedIn: 'root'
 })
-
-export class CategoriesService {
-
+export class UserService {
   apiUrl =environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
-  getCategories():Observable<any[]>{
-    return this.http.get<any[]>(`${this.apiUrl}products/categories`);
+  getUser(id:number):Observable<any>{
+    return this.http.get<any>(`${this.apiUrl}users/${id}`);
   }
 
-  
+
 }

@@ -1,0 +1,15 @@
+<nav class="bg-black hidden md:flex justify-between px-4  shadow-2xl">
+
+    <div class="h-20 w-20" [routerLink]="['/home']">
+        <img class="w-12" src="../../assets/159979.svg" alt="logo"/>
+    </div>
+
+    <div class="flex justify-around items-center">
+        <button [routerLink]="['/login']" type="button" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="mr-3 w-fit px-3 h-10">
+            <img class="w-8" src="../../../assets/user-svgrepo-com.svg"/>
+        </button>
+        <button [routerLink]="['/cart']" class="mr-3 w-fit px-3 h-10">
+            <img src="../../../assets/bx-cart.svg.svg"/>
+        </button>
+    </div>
+</nav>
