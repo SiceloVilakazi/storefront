@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators';
+import { environment } from 'src/environments/environment.development';
 
 
 
@@ -21,7 +22,7 @@ class User {
 
 export class AuthenticationService {
 
-  apiUrl ='https://fakestoreapi.com/';
+  apiUrl =environment.apiUrl;
 
   //private currentUserSubject: BehaviorSubject<string>;
   //public currentUser: Observable<string>;

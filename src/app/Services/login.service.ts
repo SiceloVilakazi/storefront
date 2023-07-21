@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.development';
 
 interface loginDetails{
   userName:string;
@@ -13,7 +14,7 @@ interface loginDetails{
 })
 export class LoginService {
 
-  apiUrl ='https://fakestoreapi.com/';
+  apiUrl =environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 

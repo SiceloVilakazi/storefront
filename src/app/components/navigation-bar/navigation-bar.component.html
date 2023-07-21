@@ -5,7 +5,7 @@
     </div>
 
     <div class="flex justify-around items-center">
-        <button type="button" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="mr-3 w-fit px-3 h-10">
+        <button [routerLink]="['/login']" type="button" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="mr-3 w-fit px-3 h-10">
             <img class="w-8" src="../../../assets/user-svgrepo-com.svg"/>
         </button>
         <button [routerLink]="['/cart']" class="mr-3 w-fit px-3 h-10">

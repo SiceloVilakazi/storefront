@@ -15,7 +15,9 @@ export class HomeComponent {
 
   }
   onAddtoCart(product:any){
+    
     localStorage.setItem('cartItem', JSON.stringify(product));
+
     console.log(product)
   }
 }
