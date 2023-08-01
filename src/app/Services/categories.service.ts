@@ -13,8 +13,8 @@ export class CategoriesService {
 
   constructor(private http: HttpClient) { }
 
-  getCategories():Observable<any[]>{
-    return this.http.get<any[]>(`${this.apiUrl}products/categories`);
+  getCategories():Observable<string[]>{
+    return this.http.get<string[]>(`${this.apiUrl}products/categories`);
   }
 
   
